@@ -1,4 +1,3 @@
-// Film camera date-back limit year data
 // cameraType: "compact" | "slr" | "halfframe"
 const CAMERAS = [
   // ── Canon ──────────────────────────────────────────────────────────────────
@@ -99,7 +98,18 @@ const CAMERAS = [
   // ── Fujifilm ────────────────────────────────────────────────────────────────
   {
     brand: "Fujifilm", brandJa: "富士フイルム",
-    model: "Tiara / DL Super Mini",
+    model: "Tiara",
+    limitYear: 2026, limitDisplay: "2025–2026",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://foqus.film/upload/iblock/e37/f42dvp9hhndjlze63euida33ohnfr0cn/FujiFilm%20DL%20Super%20Mini%20-%20Manual.pdf",
+      "https://www.photrio.com/forum/threads/cameras-with-quartz-date-data-backs-going-past-2020.180061/"
+    ],
+    notes: "Slim fixed-lens compact released in 1994. Manual states calendar range \"94–25\"."
+  },
+  {
+    brand: "Fujifilm", brandJa: "富士フイルム",
+    model: "DL Super Mini",
     limitYear: 2026, limitDisplay: "2025–2026",
     cameraType: "compact", openEnded: false,
     sourceUrls: [
@@ -120,17 +130,50 @@ const CAMERAS = [
   },
   {
     brand: "Fujifilm", brandJa: "富士フイルム",
-    model: "Zoom Date 90 SR / 115 SR / 125 SR",
+    model: "Zoom Date 90 SR",
     limitYear: 2030, limitDisplay: "2030",
     cameraType: "compact", openEnded: false,
     sourceUrls: [
-      "https://www.photrio.com/forum/threads/cameras-with-quartz-date-data-backs-going-past-2020.180061/"
+      "https://www.photrio.com/forum/threads/cameras-with-quartz-date-data-backs-going-past-2020.180061/",
+      "https://www.japancamerahunter.com/2018/08/camera-geekery-tokyo-2020-olympics-quartz-date-camera-guide/"
     ],
-    notes: "Various models in the Zoom Date series."
+    notes: "Model in the Zoom Date series."
   },
   {
     brand: "Fujifilm", brandJa: "富士フイルム",
-    model: "Klasse S / Klasse W",
+    model: "Zoom Date 115 SR",
+    limitYear: 2030, limitDisplay: "2030",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://www.photrio.com/forum/threads/cameras-with-quartz-date-data-backs-going-past-2020.180061/",
+      "https://www.japancamerahunter.com/2018/08/camera-geekery-tokyo-2020-olympics-quartz-date-camera-guide/"
+    ],
+    notes: "Model in the Zoom Date series."
+  },
+  {
+    brand: "Fujifilm", brandJa: "富士フイルム",
+    model: "Zoom Date 125 SR",
+    limitYear: 2030, limitDisplay: "2030",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://www.photrio.com/forum/threads/cameras-with-quartz-date-data-backs-going-past-2020.180061/",
+      "https://www.japancamerahunter.com/2018/08/camera-geekery-tokyo-2020-olympics-quartz-date-camera-guide/"
+    ],
+    notes: "Model in the Zoom Date series."
+  },
+  {
+    brand: "Fujifilm", brandJa: "富士フイルム",
+    model: "Klasse S",
+    limitYear: 2040, limitDisplay: "2040",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://www.photrio.com/forum/threads/cameras-with-quartz-date-data-backs-going-past-2020.180061/page-3"
+    ],
+    notes: "Fujifilm's last premium compact models."
+  },
+  {
+    brand: "Fujifilm", brandJa: "富士フイルム",
+    model: "Klasse W",
     limitYear: 2040, limitDisplay: "2040",
     cameraType: "compact", openEnded: false,
     sourceUrls: [
@@ -150,13 +193,83 @@ const CAMERAS = [
   },
   {
     brand: "Fujifilm", brandJa: "富士フイルム",
-    model: "Silvi Series",
-    limitYear: 2031, limitDisplay: "2031–2035",
+    model: "Silvi 1000",
+    limitYear: 2031, limitDisplay: "2031",
     cameraType: "compact", openEnded: false,
     sourceUrls: [
       "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
     ],
-    notes: "Year limit varies by model."
+    notes: "Part of the Silvi Series."
+  },
+  {
+    brand: "Fujifilm", brandJa: "富士フイルム",
+    model: "Silvi 1300",
+    limitYear: 2032, limitDisplay: "2032",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Part of the Silvi Series."
+  },
+  {
+    brand: "Fujifilm", brandJa: "富士フイルム",
+    model: "Silvi 125",
+    limitYear: 2032, limitDisplay: "2032",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Part of the Silvi Series."
+  },
+  {
+    brand: "Fujifilm", brandJa: "富士フイルム",
+    model: "Silvi 90",
+    limitYear: 2032, limitDisplay: "2032",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Part of the Silvi Series."
+  },
+  {
+    brand: "Fujifilm", brandJa: "富士フイルム",
+    model: "Silvi F120",
+    limitYear: 2035, limitDisplay: "2035",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Part of the Silvi Series."
+  },
+  {
+    brand: "Fujifilm", brandJa: "富士フイルム",
+    model: "Silvi F135",
+    limitYear: 2035, limitDisplay: "2035",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Part of the Silvi Series."
+  },
+  {
+    brand: "Fujifilm", brandJa: "富士フイルム",
+    model: "Silvi F2.8",
+    limitYear: 2035, limitDisplay: "2035",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Part of the Silvi Series."
+  },
+  {
+    brand: "Fujifilm", brandJa: "富士フイルム",
+    model: "Silvi F2.8 BLACK",
+    limitYear: 2035, limitDisplay: "2035",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Part of the Silvi Series."
   },
 
   // ── Konica ──────────────────────────────────────────────────────────────────
@@ -183,25 +296,105 @@ const CAMERAS = [
   },
   {
     brand: "Konica", brandJa: "コニカ",
-    model: "Capios Series",
+    model: "Capios 20",
     limitYear: 2029, limitDisplay: "2029",
     cameraType: "compact", openEnded: false,
     sourceUrls: [
       "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
     ],
-    notes: "Later Capios series, successor to the Big Mini line."
+    notes: "Successor to the Big Mini line."
+  },
+  {
+    brand: "Konica", brandJa: "コニカ",
+    model: "Capios 25",
+    limitYear: 2029, limitDisplay: "2029",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Successor to the Big Mini line."
+  },
+  {
+    brand: "Konica", brandJa: "コニカ",
+    model: "Capios 75",
+    limitYear: 2029, limitDisplay: "2029",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Successor to the Big Mini line."
+  },
+  {
+    brand: "Konica", brandJa: "コニカ",
+    model: "Capios 125",
+    limitYear: 2029, limitDisplay: "2029",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Successor to the Big Mini line."
+  },
+  {
+    brand: "Konica", brandJa: "コニカ",
+    model: "Capios 150S",
+    limitYear: 2029, limitDisplay: "2029",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Successor to the Big Mini line."
+  },
+  {
+    brand: "Konica", brandJa: "コニカ",
+    model: "Capios 115S",
+    limitYear: 2099, limitDisplay: "2099",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Later long-life calendar model of the Capios line."
+  },
+  {
+    brand: "Konica", brandJa: "コニカ",
+    model: "Capios 130S",
+    limitYear: 2099, limitDisplay: "2099",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Later long-life calendar model of the Capios line."
   },
 
   // ── Kyocera ──────────────────────────────────────────────────────────────────
   {
     brand: "Kyocera", brandJa: "京セラ",
-    model: "Zoomate / T PROOF Series",
-    limitYear: 2049, limitDisplay: "2049–2098",
+    model: "Zoomate 70Z",
+    limitYear: 2049, limitDisplay: "2049",
     cameraType: "compact", openEnded: false,
     sourceUrls: [
       "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
     ],
-    notes: "Various Kyocera zoom compacts. Year limit varies by model."
+    notes: "Kyocera zoom compact."
+  },
+  {
+    brand: "Kyocera", brandJa: "京セラ",
+    model: "Zoomate 80",
+    limitYear: 2049, limitDisplay: "2049",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Kyocera zoom compact."
+  },
+  {
+    brand: "Kyocera", brandJa: "京セラ",
+    model: "T PROOF",
+    limitYear: 2049, limitDisplay: "2049",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Kyocera T PROOF compact."
   },
 
   // ── Leica ────────────────────────────────────────────────────────────────────
@@ -212,6 +405,16 @@ const CAMERAS = [
     cameraType: "compact", openEnded: false,
     sourceUrls: [
       "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: ""
+  },
+  {
+    brand: "Leica", brandJa: "ライカ",
+    model: "Mini II",
+    limitYear: 2050, limitDisplay: "2050",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://www.reddit.com/r/AnalogCommunity/comments/188nyld/can_anyone_suggest_a_ps_for_me_compact_date_stamp/"
     ],
     notes: ""
   },
@@ -239,6 +442,16 @@ const CAMERAS = [
   },
   {
     brand: "Minolta", brandJa: "ミノルタ",
+    model: "AFZ date",
+    limitYear: 2009, limitDisplay: "2009",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://www.japancamerahunter.com/2018/08/camera-geekery-tokyo-2020-olympics-quartz-date-camera-guide/"
+    ],
+    notes: ""
+  },
+  {
+    brand: "Minolta", brandJa: "ミノルタ",
     model: "X-700 w/ Multi Function Back",
     limitYear: 2099, limitDisplay: "2099",
     cameraType: "slr", openEnded: false,
@@ -261,7 +474,18 @@ const CAMERAS = [
   // ── Nikon ────────────────────────────────────────────────────────────────────
   {
     brand: "Nikon", brandJa: "ニコン",
-    model: "35Ti / 28Ti",
+    model: "35Ti",
+    limitYear: 2030, limitDisplay: "2030",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://www.photrio.com/forum/threads/cameras-with-quartz-date-data-backs-going-past-2020.180061/page-3",
+      "https://www.mir.com.my/rb/photography/companies/nikon/htmls/models/compact-images/Nikon35Ti28Ti/Html/spec28Ti35TiQD.htm"
+    ],
+    notes: "Premium titanium-body compact released in 1993. Features an analog gauge on the top plate."
+  },
+  {
+    brand: "Nikon", brandJa: "ニコン",
+    model: "28Ti",
     limitYear: 2030, limitDisplay: "2030",
     cameraType: "compact", openEnded: false,
     sourceUrls: [
@@ -323,7 +547,17 @@ const CAMERAS = [
   },
   {
     brand: "Nikon", brandJa: "ニコン",
-    model: "MF-12 / MF-16",
+    model: "MF-12",
+    limitYear: 2100, limitDisplay: "2100",
+    cameraType: "slr", openEnded: false,
+    sourceUrls: [
+      "https://www.photrio.com/forum/threads/cameras-with-quartz-date-data-backs-going-past-2020.180061/"
+    ],
+    notes: "Data backs for FM2 etc. Designed with a 100-year calendar span."
+  },
+  {
+    brand: "Nikon", brandJa: "ニコン",
+    model: "MF-16",
     limitYear: 2100, limitDisplay: "2100",
     cameraType: "slr", openEnded: false,
     sourceUrls: [
@@ -363,13 +597,73 @@ const CAMERAS = [
   },
   {
     brand: "Nikon", brandJa: "ニコン",
-    model: "Lite Touch Zoom Series",
-    limitYear: 2039, limitDisplay: "2039–2049",
+    model: "Lite Touch Zoom 120ED QD",
+    limitYear: 2039, limitDisplay: "2039",
     cameraType: "compact", openEnded: false,
     sourceUrls: [
       "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
     ],
-    notes: "Year limit varies by model."
+    notes: "Part of the Lite Touch Zoom series."
+  },
+  {
+    brand: "Nikon", brandJa: "ニコン",
+    model: "Lite Touch Zoom 140ED QD",
+    limitYear: 2049, limitDisplay: "2049",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Part of the Lite Touch Zoom series."
+  },
+  {
+    brand: "Nikon", brandJa: "ニコン",
+    model: "Lite Touch Zoom 100W QD",
+    limitYear: 2049, limitDisplay: "2049",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Part of the Lite Touch Zoom series."
+  },
+  {
+    brand: "Nikon", brandJa: "ニコン",
+    model: "Lite Touch Zoom 130ED QD",
+    limitYear: 2049, limitDisplay: "2049",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Part of the Lite Touch Zoom series."
+  },
+  {
+    brand: "Nikon", brandJa: "ニコン",
+    model: "Lite Touch Zoom 150ED QD",
+    limitYear: 2049, limitDisplay: "2049",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Part of the Lite Touch Zoom series."
+  },
+  {
+    brand: "Nikon", brandJa: "ニコン",
+    model: "Lite Touch Zoom 70Ws QD",
+    limitYear: 2049, limitDisplay: "2049",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Part of the Lite Touch Zoom series."
+  },
+  {
+    brand: "Nikon", brandJa: "ニコン",
+    model: "Lite Touch Zoom 110s QD",
+    limitYear: 2049, limitDisplay: "2049",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Part of the Lite Touch Zoom series."
   },
 
   // ── Olympus ──────────────────────────────────────────────────────────────────
@@ -481,7 +775,17 @@ const CAMERAS = [
   },
   {
     brand: "Pentax", brandJa: "ペンタックス",
-    model: "Espio 120SW / 120SW II",
+    model: "Espio 120SW",
+    limitYear: 2099, limitDisplay: "2099",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://www.photrio.com/forum/threads/cameras-with-quartz-date-data-backs-going-past-2020.180061/page-3"
+    ],
+    notes: "Weather-resistant compact. Works until 2099."
+  },
+  {
+    brand: "Pentax", brandJa: "ペンタックス",
+    model: "Espio 120SW II",
     limitYear: 2099, limitDisplay: "2099",
     cameraType: "compact", openEnded: false,
     sourceUrls: [
@@ -493,7 +797,73 @@ const CAMERAS = [
   // ── Ricoh ────────────────────────────────────────────────────────────────────
   {
     brand: "Ricoh", brandJa: "リコー",
-    model: "R1 / R1s / GR1 / GR1s / GR10 / GR21 / GR1v",
+    model: "R1",
+    limitYear: 2024, limitDisplay: "2024",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://www.japancamerahunter.com/2018/08/camera-geekery-tokyo-2020-olympics-quartz-date-camera-guide/",
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Ricoh GR series. Note: aging ribbon cables inside can break, causing LCD or camera failure."
+  },
+  {
+    brand: "Ricoh", brandJa: "リコー",
+    model: "R1s",
+    limitYear: 2024, limitDisplay: "2024",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://www.japancamerahunter.com/2018/08/camera-geekery-tokyo-2020-olympics-quartz-date-camera-guide/",
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Ricoh GR series. Note: aging ribbon cables inside can break, causing LCD or camera failure."
+  },
+  {
+    brand: "Ricoh", brandJa: "リコー",
+    model: "GR1",
+    limitYear: 2024, limitDisplay: "2024",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://www.japancamerahunter.com/2018/08/camera-geekery-tokyo-2020-olympics-quartz-date-camera-guide/",
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Ricoh GR series. Note: aging ribbon cables inside can break, causing LCD or camera failure."
+  },
+  {
+    brand: "Ricoh", brandJa: "リコー",
+    model: "GR1s",
+    limitYear: 2024, limitDisplay: "2024",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://www.japancamerahunter.com/2018/08/camera-geekery-tokyo-2020-olympics-quartz-date-camera-guide/",
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Ricoh GR series. Note: aging ribbon cables inside can break, causing LCD or camera failure."
+  },
+  {
+    brand: "Ricoh", brandJa: "リコー",
+    model: "GR10",
+    limitYear: 2024, limitDisplay: "2024",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://www.japancamerahunter.com/2018/08/camera-geekery-tokyo-2020-olympics-quartz-date-camera-guide/",
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Ricoh GR series. Note: aging ribbon cables inside can break, causing LCD or camera failure."
+  },
+  {
+    brand: "Ricoh", brandJa: "リコー",
+    model: "GR21",
+    limitYear: 2024, limitDisplay: "2024",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://www.japancamerahunter.com/2018/08/camera-geekery-tokyo-2020-olympics-quartz-date-camera-guide/",
+      "https://morographyblog.wordpress.com/2019/12/22/2019_and_beyond/"
+    ],
+    notes: "Ricoh GR series. Note: aging ribbon cables inside can break, causing LCD or camera failure."
+  },
+  {
+    brand: "Ricoh", brandJa: "リコー",
+    model: "GR1v",
     limitYear: 2024, limitDisplay: "2024",
     cameraType: "compact", openEnded: false,
     sourceUrls: [
@@ -530,13 +900,63 @@ const CAMERAS = [
   // ── Yashica ──────────────────────────────────────────────────────────────────
   {
     brand: "Yashica", brandJa: "ヤシカ",
-    model: "Samurai X3.0 / X4.0 / Z / Z2",
+    model: "Samurai X3.0",
     limitYear: 2019, limitDisplay: "2019",
     cameraType: "halfframe", openEnded: false,
     sourceUrls: [
       "https://www.photrio.com/forum/threads/cameras-with-quartz-date-data-backs-going-past-2020.180061/page-2"
     ],
     notes: "Half-frame SLR. A workaround of setting the clock to Dec 31, 2019 at 11:59 and waiting for the rollover has been reported."
+  },
+  {
+    brand: "Yashica", brandJa: "ヤシカ",
+    model: "Samurai X4.0",
+    limitYear: 2019, limitDisplay: "2019",
+    cameraType: "halfframe", openEnded: false,
+    sourceUrls: [
+      "https://www.photrio.com/forum/threads/cameras-with-quartz-date-data-backs-going-past-2020.180061/page-2"
+    ],
+    notes: "Half-frame SLR. A workaround of setting the clock to Dec 31, 2019 at 11:59 and waiting for the rollover has been reported."
+  },
+  {
+    brand: "Yashica", brandJa: "ヤシカ",
+    model: "Samurai Z",
+    limitYear: 2019, limitDisplay: "2019",
+    cameraType: "halfframe", openEnded: false,
+    sourceUrls: [
+      "https://www.photrio.com/forum/threads/cameras-with-quartz-date-data-backs-going-past-2020.180061/page-2"
+    ],
+    notes: "Half-frame SLR. A workaround of setting the clock to Dec 31, 2019 at 11:59 and waiting for the rollover has been reported."
+  },
+  {
+    brand: "Yashica", brandJa: "ヤシカ",
+    model: "Samurai Z2",
+    limitYear: 2019, limitDisplay: "2019",
+    cameraType: "halfframe", openEnded: false,
+    sourceUrls: [
+      "https://www.photrio.com/forum/threads/cameras-with-quartz-date-data-backs-going-past-2020.180061/page-2"
+    ],
+    notes: "Half-frame SLR. A workaround of setting the clock to Dec 31, 2019 at 11:59 and waiting for the rollover has been reported."
+  },
+  {
+    brand: "Yashica", brandJa: "ヤシカ",
+    model: "T4",
+    limitYear: 2019, limitDisplay: "2019",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://www.reddit.com/r/analog/comments/pjpkge/yashica_t4_date_back_year_settings_range_from/"
+    ],
+    notes: ""
+  },
+  {
+    brand: "Yashica", brandJa: "ヤシカ",
+    model: "T4 Super",
+    limitYear: 2049, limitDisplay: "2049",
+    cameraType: "compact", openEnded: false,
+    sourceUrls: [
+      "https://www.photrio.com/forum/threads/cameras-with-quartz-date-data-backs-going-past-2020.180061/page-3"
+    ],
+    notes: "Known as T5 or Kyocera T-Proof in some regions."
   },
   {
     brand: "Yashica", brandJa: "ヤシカ",
@@ -557,5 +977,5 @@ const CAMERAS = [
       "https://www.japancamerahunter.com/2018/08/camera-geekery-tokyo-2020-olympics-quartz-date-camera-guide/"
     ],
     notes: "Reported to work past 2020, but exact upper limit is unconfirmed."
-  },
+  }
 ];
