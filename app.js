@@ -123,6 +123,11 @@
       const srcLabel = urls.length <= 1 ? '↗' : `↗ ×${urls.length}`;
       const srcTitle = urls.join('\n');
 
+      // 画像検索 URL
+      const searchUrl = 'https://duckduckgo.com/?q=' +
+        encodeURIComponent(camera.brand + ' ' + camera.model + ' film camera') +
+        '&iax=images&ia=images';
+
       // 上限年の表示（9999 → ∞）
       const yearDisplay = camera.limitYear === 9999
         ? '<span title="事実上無制限">∞</span>'
@@ -139,7 +144,8 @@
           <span class="badge badge-${status}">${STATUS_LABEL[status]}</span>
         </td>
         <td class="col-source">
-          <span class="source-btn" title="${escAttr(srcTitle)}">${srcLabel}</span>
+          ${urls.length > 0 ? `<span class="source-btn" title="${escAttr(srcTitle)}">${srcLabel}</span>` : ''}
+          <a class="source-btn img-search-btn" href="${escAttr(searchUrl)}" target="_blank" rel="noopener" title="Search images">🔍</a>
         </td>
       `;
 
